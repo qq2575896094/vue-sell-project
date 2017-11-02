@@ -1,5 +1,5 @@
 <template>
-  <div class="common-list-arroe" @click="changeAddress(path)">
+  <div class="common-list-arrow" @click="changeAddress(path)">
     <div class="title">{{title}}</div>
     <span class="icon icon-keyboard_arrow_right"></span>
   </div>
@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    name: 'CommonListRow',
+    name: 'CommonListArrow',
     props: ['title', 'path'],
     methods: {
       changeAddress(path) {
@@ -20,7 +20,7 @@
 <style scoped type="text/css" lang="less">
   @import "../../styles/_mixins";
 
-  .common-list-arroe {
+  .common-list-arrow {
     display: flex;
     align-items: center;
     padding-right: 10px;

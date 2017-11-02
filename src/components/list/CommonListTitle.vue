@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    name: 'CommonListRow',
+    name: 'CommonListTitle',
     props: ['title', 'content', 'path'],
     methods: {
       changeAddress(path) {
