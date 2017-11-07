@@ -5,7 +5,7 @@
       <div class="addr-container" @click="changeAddress('ProfileEditReceive',{type:'edit'})">
         <div class="content">
           <div class="address">
-            <img class="addr-avatar" src="../images/usr-name.jpeg" alt="" width="20" height="14">
+            <img class="addr-avatar" src="/static/images/usr-name.jpeg" alt="" width="20" height="14">
             <span class="addr-title">陆家嘴软件园峨山路91弄20号 8号楼3层华瑞银行</span>
           </div>
           <div class="linkman">
@@ -17,7 +17,7 @@
       <div class="addr-container" @click="changeAddress('ProfileEditReceive',{type:'edit'})">
         <div class="content">
           <div class="address">
-            <img class="addr-avatar" src="../images/usr-name.jpeg" alt="" width="20" height="14">
+            <img class="addr-avatar" src="/static/images/usr-name.jpeg" alt="" width="20" height="14">
             <span class="addr-title">陆家嘴软件园峨山路91弄20号 8号楼3层华瑞银行</span>
           </div>
           <div class="linkman">

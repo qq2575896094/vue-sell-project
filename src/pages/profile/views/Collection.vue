@@ -3,10 +3,10 @@
     <CollectionHeader :isGoBack="isGoBack" :title="headerTitle"></CollectionHeader>
     <div class="collection-wrapper">
       <div class="container">
-        <img src="../images/usr-name.jpeg" alt="" class="avatar" height="60" width="60">
+        <img src="/static/images/usr-name.jpeg" alt="" class="avatar" height="60" width="60">
         <div class="content">
           <div class="row-content">
-            <img src="../images/usr-name.jpeg" alt="" height="16" width="24">
+            <img src="/static/images/usr-name.jpeg" alt="" height="16" width="24">
             <div class="store-title"><span>果之满满鲜榨果汁吧</span>&nbsp;(<span>陆软店</span>)</div>
             <div class="other-msg">
               <span class="ensure ensure-b">保</span><span class="ensure ensure-p">票</span>
@@ -32,10 +32,10 @@
         </div>
       </div>
       <div class="container">
-        <img src="../images/usr-name.jpeg" alt="" class="avatar" height="60" width="60">
+        <img src="/static/images/usr-name.jpeg" alt="" class="avatar" height="60" width="60">
         <div class="content">
           <div class="row-content">
-            <img src="../images/usr-name.jpeg" alt="" height="16" width="24">
+            <img src="/static/images/usr-name.jpeg" alt="" height="16" width="24">
             <div class="store-title"><span>避风塘</span>&nbsp;(<span>浦建路店</span>)</div>
             <div class="other-msg">
               <span class="ensure ensure-b">保</span><span class="ensure ensure-p">票</span>

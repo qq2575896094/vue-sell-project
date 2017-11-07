@@ -14,7 +14,7 @@ import store from './store/index'
 
 import './styles/index.less';
 
-import './fonts/font.css';
+import './assets/fonts/font.css';
 
 Vue.config.productionTip = false;
 Vue.use(Loading);

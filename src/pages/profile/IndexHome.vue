@@ -3,7 +3,7 @@
     <ProfileHeader></ProfileHeader>
     <div class="user-wrapper" @click="changeAddress('/profile/account')">
       <div class="avatar">
-        <img src="./images/usr-name.jpeg" alt="" width="64" height="64">
+        <img src="/static/images/usr-name.jpeg" alt="" width="64" height="64">
       </div>
       <div class="usr-info">
         <div class="usr-name">qq_2575896094</div>
@@ -31,14 +31,14 @@
     <div class="address-wrapper">
       <div class="receive-addr" @click="changeAddress('/profile/receive')">
         <div class="receive-avatar">
-          <img src="./images/usr-name.jpeg" alt="" width="24" height="24">
+          <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
         <div class="receive-title">收货地址</div>
         <span class="icon icon-keyboard_arrow_right"></span>
       </div>
       <div class="my-collection" @click="changeAddress('/profile/collection')">
         <div class="collection-avatar">
-          <img src="./images/usr-name.jpeg" alt="" width="24" height="24">
+          <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
         <div class="collection-title">我的收藏</div>
         <span class="icon icon-keyboard_arrow_right"></span>
@@ -48,7 +48,7 @@
     <div class="activity-wrapper">
       <div class="recommend-activity">
         <div class="recommend-avatar">
-          <img src="./images/usr-name.jpeg" alt="" width="24" height="24">
+          <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
         <div class="recommend-content">
           <span class="title">推荐有奖</span><span class="content">5元现金</span>
@@ -57,7 +57,7 @@
       </div>
       <div class="points-shopping">
         <div class="shopping-avatar">
-          <img src="./images/usr-name.jpeg" alt="" width="24" height="24">
+          <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
         <div class="shopping-content">
           <span class="title">积分商城</span><span class="content">0元好物在这里</span>
@@ -66,7 +66,7 @@
       </div>
       <div class="every-choice">
         <div class="choice-avatar">
-          <img src="./images/usr-name.jpeg" alt="" width="24" height="24">
+          <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
         <div class="choice-content">
           <span class="title">每日精选</span><span class="content">全场包邮一元起</span>
@@ -87,21 +87,21 @@
     <div class="other-wrapper">
       <div class=" serve-center">
         <div class="serve-avatar">
-          <img src="./images/usr-name.jpeg" alt="" width="24" height="24">
+          <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
         <div class="serve-title">服务中心</div>
         <span class="icon icon-keyboard_arrow_right"></span>
       </div>
       <div class="score-center">
         <div class="score-avatar">
-          <img src="./images/usr-name.jpeg" alt="" width="24" height="24">
+          <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
         <div class="score-title">欢迎评分</div>
         <span class="icon icon-keyboard_arrow_right"></span>
       </div>
       <div class="cooperation-center" @click="changeAddress('/profile/cooperation')">
         <div class="receive-avatar">
-          <img src="./images/usr-name.jpeg" alt="" width="24" height="24">
+          <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
         <div class="cooperation-title">加盟合作</div>
         <span class="icon icon-keyboard_arrow_right"></span>

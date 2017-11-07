@@ -4,7 +4,7 @@
     <div class="user-wrapper">
       <div class="user-content">
         <div class="avatar-content">
-          <span>头像</span><img class="avatar-images" src="../images/usr-name.jpeg" alt="" width="30" height="30"></div>
+          <span>头像</span><img class="avatar-images" src="/static/images/usr-name.jpeg" alt="" width="30" height="30"></div>
         <span class="icon icon-keyboard_arrow_right"></span>
       </div>
       <div class="user-content">

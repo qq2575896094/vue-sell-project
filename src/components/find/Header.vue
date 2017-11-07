@@ -1,16 +1,16 @@
 <template>
-  <div class="order-header">
+  <div class="find-header">
     <div class="header">
       <span class="line line-after"></span><span class="img-box"></span><span class="title" :class="classMap[imageType]">{{title}}</span><span class="line line-before"></span>
     </div>
-    <div class="dec">特价商品,一网打尽</div>
+    <div class="des">{{describe}}</div>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'OrderHeader',
-    props: ["title", "imageType"],
+    name: 'FindHeader',
+    props: ["title", "imageType", "describe"],
     data() {
       return {
         classMap: []
@@ -25,7 +25,7 @@
 <style scoped type="text/css" lang="less">
   @import "../../styles/_mixins";
 
-  .order-header {
+  .find-header {
     padding: 10px 0;
     text-align: center;
     background: @fff;
@@ -80,7 +80,7 @@
         }
       }
     }
-    .dec {
+    .des {
       margin-top: 4px;
       text-align: center;
       font-size: 14px;
