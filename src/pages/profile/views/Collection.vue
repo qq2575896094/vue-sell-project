@@ -28,7 +28,6 @@
               <span>1.5km</span><span>|</span><span>31分钟</span>
             </div>
           </div>
-
         </div>
       </div>
       <div class="container">

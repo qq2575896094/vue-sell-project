@@ -1,17 +1,19 @@
 <template>
   <div class="profile-indexHome">
     <ProfileHeader></ProfileHeader>
-    <div class="user-wrapper" @click="changeAddress('/profile/account')">
-      <div class="avatar">
+    <div class="user-wrapper" @click="changeAddress(userInfo&&userInfo.user_id?'/profile/account':'/profile/mobileSign')">
+      <div class="avatar" v-if="userInfo&&userInfo.user_id">
+        <img :src="avatar" alt="" width="64" height="64">
+      </div>
+      <div class="avatar" v-else>
         <img src="/static/images/usr-name.jpeg" alt="" width="64" height="64">
       </div>
       <div class="usr-info">
-        <div class="usr-name">qq_2575896094</div>
-        <div class="usr-mobile">18301651175</div>
+        <div class="usr-name">{{username}}</div>
+        <div class="usr-mobile">{{mobile}}</div>
       </div>
       <span class="icon icon-keyboard_arrow_right"></span>
     </div>
-
     <div class="wallet-wrapper">
       <div class="wallet-container">
         <div class="wallet-content"><span class="wallet-money">0.00</span><span class="wallet-unit">元</span></div>
@@ -46,7 +48,7 @@
     </div>
 
     <div class="activity-wrapper">
-      <div class="recommend-activity">
+      <div class="recommend-activity" v-if="userInfo&&userInfo.user_id">
         <div class="recommend-avatar">
           <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
@@ -60,11 +62,11 @@
           <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
         <div class="shopping-content">
-          <span class="title">积分商城</span><span class="content">0元好物在这里</span>
+          <span class="title">积分商城</span><span class="content" v-if="userInfo&&userInfo.user_id">0元好物在这里</span>
         </div>
         <span class="icon icon-keyboard_arrow_right"></span>
       </div>
-      <div class="every-choice">
+      <div class="every-choice" v-if="userInfo&&userInfo.user_id">
         <div class="choice-avatar">
           <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
@@ -73,7 +75,7 @@
         </div>
         <span class="icon icon-keyboard_arrow_right"></span>
       </div>
-      <div class="free-flow">
+      <div class="free-flow" v-if="userInfo&&userInfo.user_id">
         <div class="flow-avatar">
           <img src="./images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
@@ -118,9 +120,9 @@
     name: 'ProfileIndexHome',
     data() {
       return {
-        username: '登录/注册',           //用户名
+        username: '立即登录',           //用户名
         resetname: '',
-        mobile: '暂无绑定手机号',             //电话号码
+        mobile: '登陆后可享受更多特权',             //电话号码
         balance: 0,            //我的余额
         count: 0,             //优惠券个数
         pointNumber: 0,       //积分数
