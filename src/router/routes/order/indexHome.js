@@ -3,9 +3,14 @@
  */
 
 import IndexHome from '../../../pages/order/IndexHome.vue'
+import auth from '../../../services/auth/auth'
 
 export default {
   path: '/order/indexHome',
   name: 'OrderIndexHome',
-  component: IndexHome
+  component: IndexHome,
+  beforeEnter(to, from, next) {
+    console.log('123');
+    next();
+  }
 }

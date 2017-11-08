@@ -18,5 +18,5 @@ export const DETAIL_SHOW = 'DETAIL_SHOW';
 export const DETAIL_HIDE = 'DETAIL_HIDE';
 
 
-//获取用户信息
-export const GET_USERINFO = 'GET_USERINFO';
+//用户信息
+export const USER_INFO = 'USER_INFO';

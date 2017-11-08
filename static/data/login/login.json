@@ -1,0 +1,24 @@
+{
+  "returnCode": "000000",
+  "returnMsg": "SUCCESS",
+  "body": {
+    "firstLogin": false,
+    "updatePassword": false,
+    "personId": "2016122800957958740",
+    "idType": "00",
+    "idNumber": "152923196504106809",
+    "realname": "焦纨融",
+    "username": "雨田",
+    "address": null,
+    "authFlg": "1",
+    "email": null,
+    "errMessage": null,
+    "atWeChatBank": null,
+    "avatar": "/static/images/usr-name.jpeg",
+    "sex": null,
+    "refereeId": "null",
+    "faceFlag": false,
+    "city": "",
+    "mobile": "13801228008"
+  }
+}

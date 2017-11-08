@@ -17,7 +17,7 @@ axios.interceptors.request.use((config) => {
 //接收到请求之后执行的操作
 axios.interceptors.response.use((res) => {
   if (res.data.returnCode === '000000') {
-    return res.data.data;
+    return res.data.body;
   } else {
     return res.data;
   }

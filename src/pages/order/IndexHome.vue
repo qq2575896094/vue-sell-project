@@ -13,6 +13,7 @@
 
 <script>
   import CommonHeader from "../../components/header/CommonHeader.vue"
+  import {mapActions, mapGetters} from 'vuex'
 
   export default {
     name: 'OrderIndexHome',
@@ -22,6 +23,7 @@
         headerTitle: "订单"
       }
     },
+    computed: mapGetters(['userInfo']),
     mounted() {
       this.$store.dispatch('FOOTER_SHOW');
     },

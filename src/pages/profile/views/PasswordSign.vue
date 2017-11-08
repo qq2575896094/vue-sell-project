@@ -42,8 +42,8 @@
       return {
         isGoBack: true,
         headerTitle: '密码登录',
-        userAccount: null,        //账号
-        password: null,           //密码
+        userAccount: 'admin',        //账号
+        password: '123456',           //密码
         showPassword: false,      //是否显示密码
         codeNumber: null,         //验证码
         captchaCodeImg: null      //验证码图片
@@ -65,9 +65,10 @@
        * 获取图形验证码
        */
       async getCaptchaCode() {
-        let resBody = await this.$http.post(sendCaptchas.url);
+        let resBody = await this.$http.get(sendCaptchas.url);
         this.captchaCodeImg = resBody.imgBase64;
       },
+
       /**
        * 登录
        */
@@ -81,12 +82,15 @@
         if (!this.codeNumber) {
           return;
         }
-        let resBody = await this.$http.post(sendAccountLogin.url, {
+        let params = {
           username: this.userAccount,
           password: this.password,
           captcha_code: this.codeNumber
-        });
-        let res = await this.$http.post(sendUserInfo.url);
+        };
+
+        let resBody = await this.$http.get(sendAccountLogin.url, params);
+        this.$store.dispatch('USER_INFO', resBody);
+        this.$router.go(-2);
       }
     },
     components: {

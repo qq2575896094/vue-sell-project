@@ -1,8 +1,8 @@
 <template>
   <div class="profile-indexHome">
     <ProfileHeader></ProfileHeader>
-    <div class="user-wrapper" @click="changeAddress(userInfo&&userInfo.user_id?'/profile/account':'/profile/mobileSign')">
-      <div class="avatar" v-if="userInfo&&userInfo.user_id">
+    <div class="user-wrapper" @click="changeAddress(userInfo&&userInfo.personId?'/profile/account':'/profile/mobileSign')">
+      <div class="avatar" v-if="userInfo&&userInfo.personId">
         <img :src="avatar" alt="" width="64" height="64">
       </div>
       <div class="avatar" v-else>
@@ -48,7 +48,7 @@
     </div>
 
     <div class="activity-wrapper">
-      <div class="recommend-activity" v-if="userInfo&&userInfo.user_id">
+      <div class="recommend-activity" v-if="userInfo&&userInfo.personId">
         <div class="recommend-avatar">
           <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
@@ -62,11 +62,11 @@
           <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
         <div class="shopping-content">
-          <span class="title">积分商城</span><span class="content" v-if="userInfo&&userInfo.user_id">0元好物在这里</span>
+          <span class="title">积分商城</span><span class="content" v-if="userInfo&&userInfo.personId">0元好物在这里</span>
         </div>
         <span class="icon icon-keyboard_arrow_right"></span>
       </div>
-      <div class="every-choice" v-if="userInfo&&userInfo.user_id">
+      <div class="every-choice" v-if="userInfo&&userInfo.personId">
         <div class="choice-avatar">
           <img src="/static/images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
@@ -75,7 +75,7 @@
         </div>
         <span class="icon icon-keyboard_arrow_right"></span>
       </div>
-      <div class="free-flow" v-if="userInfo&&userInfo.user_id">
+      <div class="free-flow" v-if="userInfo&&userInfo.personId">
         <div class="flow-avatar">
           <img src="./images/usr-name.jpeg" alt="" width="24" height="24">
         </div>
@@ -145,7 +145,7 @@
       },
       //初始化数据
       initData() {
-        if (this.userInfo && this.userInfo.user_id) {
+        if (this.userInfo && this.userInfo.personId) {
           this.avatar = this.userInfo.avatar;
           this.username = this.userInfo.username;
           this.mobile = this.userInfo.mobile || '暂无绑定手机号';

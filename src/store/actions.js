@@ -29,7 +29,7 @@ export default {
   DETAIL_HIDE({commit}) {
     commit(types.DETAIL_HIDE);
   },
-  GET_USERINFO({commit}) {
-    commit(types.GET_USERINFO)
+  USER_INFO({commit}, info) {
+    commit(types.USER_INFO, info)
   }
 }

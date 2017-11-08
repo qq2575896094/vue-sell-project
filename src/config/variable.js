@@ -23,7 +23,7 @@ export let sendMobileLogin = {
  * @type {{url: string}}
  */
 export let sendAccountLogin = {
-  url: '/api/users/accountLogin'
+  url: '/static/data/login/login.json'
 };
 
 /**
@@ -31,7 +31,7 @@ export let sendAccountLogin = {
  * @type {{url: string}}
  */
 export let sendCaptchas = {
-  url: '/api/captchas/captchas'
+  url: '/static/data/captchas/captchas.json'
 };
 
 
