@@ -10,7 +10,6 @@ export default {
   name: 'OrderIndexHome',
   component: IndexHome,
   beforeEnter(to, from, next) {
-    console.log('123');
     next();
   }
 }

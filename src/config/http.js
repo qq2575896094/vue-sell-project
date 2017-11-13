@@ -30,5 +30,4 @@ axios.defaults.timeout = 60 * 1000; //超时时间
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 axios.defaults.baseURL = env.baseUrl;
 
-console.log(process.env);
 export default axios;

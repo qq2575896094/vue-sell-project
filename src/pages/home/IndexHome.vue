@@ -25,11 +25,10 @@
       this.queryMenu();
     },
     methods: {
-      queryMenu() {
+      async queryMenu() {
         let _this = this;
-        this.$http.post(sendSellerObj.url).then((res) => {
-          console.log(res);
-          _this.seller = res.data.seller;
+        await this.$http.get(sendSellerObj.url).then((res) => {
+          _this.seller = res.seller;
         }).catch((error) => {
           _this.$store.dispatch('LOADING_HIDE');
           console.log(error);

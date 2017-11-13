@@ -6,7 +6,7 @@
         <img :src="avatar" alt="" width="64" height="64">
       </div>
       <div class="avatar" v-else>
-        <img src="/static/images/usr-name.jpeg" alt="" width="64" height="64">
+        <img src="../../assets/images/usr-name.jpeg" alt="" width="64" height="64">
       </div>
       <div class="usr-info">
         <div class="usr-name">{{username}}</div>

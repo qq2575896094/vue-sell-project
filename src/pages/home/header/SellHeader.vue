@@ -62,16 +62,16 @@
 <script>
   import Star from '../../../components/star/Star'
   import {mapActions, mapGetters} from 'vuex'
-  export default{
+
+  export default {
     name: 'SellHeader',
     props: ['seller'],
-    data(){
+    data() {
       return {}
     },
     computed: mapGetters(['detailShow']),
-    mounted(){
+    mounted() {
       this.classMap = ['decrease', 'discount', 'guarantee', 'invoice', 'special'];
-      console.log(this.seller.score)
     },
     methods: mapActions(['DETAIL_SHOW', 'DETAIL_HIDE']),
     components: {
@@ -244,7 +244,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 100;
+      z-index: 101;
       width: 100%;
       height: 100%;
       overflow: auto;
