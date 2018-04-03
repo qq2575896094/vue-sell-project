@@ -2,15 +2,15 @@
   <div id="app">
     <!--<transition name="" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">-->
     <keep-alive v-if="$route.meta.keepAlive">
-      <router-view></router-view>
+      <router-view/>
     </keep-alive>
     <!--</transition>-->
 
 
     <!--<transition name="" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">-->
-    <router-view v-if="!$route.meta.keepAlive"></router-view>
+    <router-view v-if="!$route.meta.keepAlive"/>
     <!--</transition>-->
-    <HomeFooter v-show="footerShow"></HomeFooter>
+    <HomeFooter v-show="footerShow"/>
   </div>
 </template>
 
@@ -50,7 +50,7 @@
 //          this.$store.dispatch('FOOTER_SHOW');
       },
       headerChange(path) {
-        if (path == 'home')
+        if (path === 'home')
           this.$store.dispatch('HOME_HEAD_SHOW');
         else
           this.$store.dispatch('HOME_HEAD_HIDE');

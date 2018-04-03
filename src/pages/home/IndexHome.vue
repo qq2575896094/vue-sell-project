@@ -1,6 +1,6 @@
 <template>
   <div class="home-indexHome flex-items">
-    <SellHeader :seller="seller"></SellHeader>
+    <SellHeader :seller="seller"/>
     <nav class="nav">
       <router-link to="./home" class="nav-items" active-class="nav-active">商品</router-link>
       <router-link to="./house" class="nav-items" active-class="nav-active">评价</router-link>
